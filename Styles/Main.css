@@ -1,0 +1,24 @@
+.ui.grid.main-content {
+  padding: 20px; }
+
+.ui.grid .row {
+  padding: 20px; }
+.ui.grid .column {
+  border: solid; }
+
+.backgroundselector {
+  height: 70%; }
+
+.backgroundList {
+  height: 90%;
+  overflow: scroll; }
+
+.newyearbackground {
+  width: 100px;
+  height: 100px; }
+
+.backgroundPreview {
+  width: 800px;
+  height: 500px; }
+
+/*# sourceMappingURL=Main.css.map */

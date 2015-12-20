@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ECardApp">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <link rel="shortcut icon" href="" />
+
+    <title>RIP Framework</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.7/semantic.css" />
+    <link rel="stylesheet" href="Styles/Main.css" />
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.7/semantic.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+
+    <script src="Scripts/application.js"></script>
+
+</head>
+<body ng-controller="ECardController">
+
+<div class="ui grid main-content">
+    <div class="row" >
+        <div class="four wide column" style="height: 500px;">
+            <div class="row backgroundselector">
+                <button class="ui inverted red button">Upload Background</button>
+                <div class="ui horizontal list backgroundList">
+                    <a class="item" ng-repeat="newyearBG in newyearBGs" ng-click="selectBackground(newyearBG)">
+                        <img ng-src="{{ newyearBG.image }}" class="newyearbackground" />
+                    </a>
+                </div>
+            </div>
+            <div class="row" style="height:30%;">
+                <button class="ui inverted blue button ">Text</button>
+            </div>
+
+        </div>
+        <div class="twelve wide column">
+            <img ng-src="{{ image }}" class="backgroundPreview" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="ui horizontal list">
+            <a class="item" ng-repeat="sticker in stickers">
+                <img ng-src="{{ sticker.image }}" />
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

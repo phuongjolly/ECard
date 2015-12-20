@@ -1,0 +1,14 @@
+{
+  "name": "ECard",
+  "version": "1.0.0",
+  "description": "Ecard software",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "phuongjolly",
+  "license": "ISC",
+  "dependencies": {
+    "angularjs": "0.0.1"
+  }
+}
